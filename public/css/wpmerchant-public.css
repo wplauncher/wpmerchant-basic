@@ -1,0 +1,316 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+#wpm_loading_indicator {
+  position: fixed;
+  z-index: 9999;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+  text-align: center;
+  height: 64px;
+  width: 64px;
+  background: #000;
+  border-radius: 10px;
+  display: none; 
+  opacity: 0;
+  /*border: 1px solid #ffc200; */
+}
+#wpm_loading_indicator>img {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  margin-left: -2px;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
+}
+#wpm_message{
+	position: fixed;
+	  z-index: 9999;
+	  color: #fff;
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -125px;
+	  margin-left: -125px;
+	  text-align: center;
+	  height: 250px;
+	  width: 250px;
+	  background: #000;
+	  border-radius: 10px;
+	  display:none;
+}
+#wpm_message h1 {
+	padding-top: 40px;
+	color:#fff !important;
+}
+#wpm_message .wpm-close{
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px!important;
+
+}
+.wpm-close-link{
+	cursor:pointer;
+}
+.wpm-overlay, .wpm-stripe-overlay, #thank-you-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9998;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background: rgba(0,0,0,0.6);
+  perspective: 800;
+  -webkit-perspective: 800;
+  /*opacity: 0.5;*/
+  display:none;
+}
+
+/**
+PRE CHECKOUT MODAL
+**/
+.wpm_stripe_modal {
+  position: absolute;
+  z-index: 9999;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -151px;
+  margin-left: -151px;
+  text-align: center;
+  height: 64px;
+  width: 64px;
+  background: #000;
+  border-radius: 10px;
+  display: none; 
+  opacity: 0;
+  /*border: 1px solid #ffc200; */
+}
+.sc_header .image{
+  width: 76px;
+  height: 75px;
+  position: relative;
+  left: 50%;
+  margin-left: -38px;
+  top: -30px;
+ }
+ .sc_header .image img{
+ background: #fff;
+ width: 64px;
+ height: 64px;
+ -webkit-border-radius: 32px;
+ -moz-border-radius: 32px;
+ -ms-border-radius: 32px;
+ -o-border-radius: 32px;
+ border-radius: 32px;
+ margin: 4px 6px 0;
+ }
+.sc_body {
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  width: 282px;
+ /* height: 100%;*/
+  /* background-color: #dedede; 
+  opacity: 1!important;*/
+  padding-top: 30px;
+  background: #f5f5f7;
+  -webkit-box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  -ms-box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  padding: 30px 10px 30px 10px!important;
+  color: #707070;
+  /*font:13px;*/
+  line-height:18px;
+    font-size: 14px;
+}
+
+.sc_header {
+  /*background: #f5f5f7;
+  background-image: linear-gradient(#f5f5f7,#e9e9ea);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(240, 240, 242);*/
+ /* opacity: 1!important;*/
+  width: 302px;
+  height: 108px;
+  border-bottom: 1px solid #d3d3d4;
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+  -webkit-box-shadow: 0 1px 0 #fff;
+  -moz-box-shadow: 0 1px 0 #fff;
+  -ms-box-shadow: 0 1px 0 #fff;
+  -o-box-shadow: 0 1px 0 #fff;
+  box-shadow: 0 1px 0 #fff;
+  z-index: 9999;
+  display: block;
+  background: #f0f0f2;
+  background-image: linear-gradient(#f5f5f7,#e9e9ea);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(240, 240, 242);
+  background-image: -webkit-linear-gradient(#f5f5f7,#e9e9ea);
+  background-image: -moz-linear-gradient(#f5f5f7,#e9e9ea);
+  background-image: -ms-linear-gradient(#f5f5f7,#e9e9ea);
+  background-image: -o-linear-gradient(#f5f5f7,#e9e9ea);
+  background-image: linear-gradient(#f5f5f7,#e9e9ea);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #d3d3d4;
+}
+.sc_header .image:after{
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  /*background: url('http://www.wpmerchant.com/wp-content/plugins/wpmerchant/public/img/icon-border.png') no-repeat;*/ 
+	  background-size: 100% 100%;
+}
+.sc_header h1{
+	  position: absolute;
+	  top: 50px;
+	  left: 0px;
+	  right: 15px;
+	  color: #000;
+	  font-size: 17px!important;
+	  font-weight: bold;
+	  text-shadow: 0 1px 0 #fff;
+	  text-align: center;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  padding: 0 20px;
+	  width: 262px;
+	  margin-top: 0px;
+}
+.sc_header h2{
+	  position: absolute;
+	  top: 65px;
+	  left: 0px;
+	  right: 15px;
+	  color: #5b5b65;
+	  font-size: 13px!important;
+	  font-family: 'HelveticaNeueMedium','HelveticaNeue-Medium','Helvetica Neue Medium','HelveticaNeue','Helvetica Neue',Helvetica,Arial;
+	  font-weight: normal;
+	  text-shadow: 0 1px 0 #fff;
+	  text-align: center;
+	  overflow-x: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  padding: 0 20px;
+	  margin-top: 10px;
+	  width: 261px;
+	  line-height:normal;
+}
+.sc_header .close{
+	position: absolute;
+	top: 7px;
+	left: 8px;
+	width: 22px;
+	height: 23px;
+	background-size: 100% 100%;
+	cursor: pointer;
+	
+}
+/**
+ALerts
+**/
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/**
+add clear after eleemnt with this
+**/
+.wpm_clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.share-on-twitter {
+background: #41B7D8;
+}
+.share-on-link {
+padding: 5px 10px;
+color: white;
+}
+
+.share-on-facebook {
+background: #3B5997;
+}
+.share-on-link {
+padding: 5px 10px;
+color: white;
+}
+
+.share-on-googleplus {
+background: #D64937;
+}
+.share-on-link {
+padding: 5px 10px;
+color: white;
+}
+.stripeSocial {
+  margin-top: 20px;
+}
+.share-on-link:hover {
+  color: #dedede;
+}
